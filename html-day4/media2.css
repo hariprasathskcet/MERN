@@ -1,0 +1,51 @@
+#box1
+{
+    border: 1px solid black;
+    background-color: palevioletred;
+    height: 3cm;
+    width: 3cm;
+}
+#box2
+{
+    border: 1px solid black;
+    background-color: blue;
+    height: 3cm;
+    width: 3cm;
+}
+#box3
+{
+    border: 1px solid black;
+    background-color: yellow;
+    height: 3cm;
+    width: 3cm;
+}
+#box4
+{
+    border: 1px solid black;
+    background-color: red;
+    height: 3cm;
+    width: 3cm;
+}
+#back
+{
+    display: flex;padding: 10px;
+    column-gap: 150px;
+}
+@media screen and (max-width:800px)
+{
+    #back
+    {
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 5px;
+    }
+}
+@media screen and (max-width:500px)
+{
+    #back
+    {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 5px;
+    }
+}
